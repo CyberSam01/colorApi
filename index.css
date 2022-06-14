@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    display: block;
+}
+
+.hex-p {
+    font-size: .8rem;
+    color: white;
+}
+
+p {
+    color: #444444;
+}
+
+#container {
+    background-color: #1f2937;
+    width: 80vw;
+    margin: .5em auto 0 auto;
+    padding: 1.5em 1em;
+    /* height: 14vh; */
+    border-radius: 5px;
+    box-shadow: 0 0 5px #444444;
+}
+
+#options-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type=color] {
+    padding: 0;
+    width: 4em;
+    height: 3em;
+    color: #f55a5a;
+    border-radius: 5px;
+}
+
+#list, button {
+    border-radius: 5px;
+    background-color: #1f2937;
+    color: white;
+    font-size: 1.3rem;
+    padding: .5em;
+}
+
+button {
+    background-color: #3d4b60;
+    border: none;
+    margin: 1em 0;
+    transform: scale(1);
+    transition: transform 100ms;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+#copy-btn {
+    margin: 0;
+}
+
+#color-container{
+    display: flex;
+}
+
+#hex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#color {
+    width: 100%;
+    height: 20em;
+    display: flex;
+    margin: 0;
+    /* display: flex;
+    align-items: flex-end;
+    justify-content: center; */
+}
+
+.color-and-btn-container {
+    display: flex;
+    flex-direction: column;
+    /* min-height: 500px; */
+    justify-content: space-between;
+}
+
+#copy-btn {
+    display: none;
+}
+
+#my-modal {
+    color: white;
+    display: none;
+}
+
+.color-button-desk {
+    display: none;
+}
+.color-button-mob {
+    display: inline;
+}
+
+  @media (min-width:1480px) {
+    .hex-p {
+        font-size: 1em;
+    }
+    #container {
+        width: 30vw;
+        padding: 1.5em 1em;
+        border-radius: 5px;
+        box-shadow: 0 0 5px #444444;
+        margin-top: 3em;
+    }
+    #options-container {
+        justify-content: space-evenly;
+    }
+    input[type=color] {
+        padding: 0;
+        margin-top: 2.6em;
+        width: 4.5em;
+        height: 3.7em;
+        color: #f55a5a;
+    }
+    #list, button {
+        font-size: 1.5rem;
+        padding: .5em;
+    }
+
+    #hex-container {
+        justify-content: space-around;
+    }
+    
+    button {
+        background-color: #3d4b60;
+        border: none;
+        margin: 1.7em 0;
+        width: 5.5em;
+        height: 2.5em;
+        transform: scale(1);
+        transition: transform 100ms;
+    }
+
+    #list {
+        margin-top: 1.7em;
+        height: 2.5em;
+        width: 9em;
+    }
+
+    .color-button-mob {
+        display: none;
+    }
+    .color-button-desk {
+        display: inline;
+    }
+    #copy-btn {
+        margin: .5em auto;
+        width: 90%;
+    }
+    #modal-desk{
+        margin-top: 2em;
+        width: 15%;
+        font-size: 1.5rem;
+    }
+    #modal-desk > p{
+        margin: 0;
+    }
+  }
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 250px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    border-radius: 5px;
+    margin: auto;
+    padding: 1em;
+    border: 1px solid #888;
+    width: 35%;
+  }
+  
+  /* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }

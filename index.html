@@ -1,0 +1,45 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+        <!-- MODAL -->
+        <div id="myModal" class="modal">
+            <div id="modal-desk" class="modal-content">
+              <span class="close">&times;</span>
+              <p>Colors Copied</p>
+            </div>
+          
+          </div>
+        <div id="container">
+            <div id="options-container">
+                <input type="color" value="#9357b6" id="color-input">        
+                <select id="list">
+                    <option class="drop-down" selected="selected">monochrome</option>
+                    <option class="drop-down">monochrome-dark</option>
+                    <option class="drop-down">monochrome-light</option>
+                    <option class="drop-down">analogic</option>
+                    <option class="drop-down">complement</option>
+                    <option class="drop-down">analogic-complement</option>
+                    <option class="drop-down">triad</option>
+                    <option class="drop-down">quad</option>
+                </select>
+                <button class="color-button-desk" id="color-btn-desk">Get Color</button>
+            </div>
+            
+            <div class="color-and-btn-container">
+                <button class="color-button-mob" id="color-btn-mob">Get Color</button>
+                <div id="color-container"></div>
+                <div id="hex-container"></div>
+                <button id="copy-btn">Copy All</button>
+            </div>
+            
+        </div>
+        <script src="index.js"></script>
+        <script src="https://kit.fontawesome.com/63f36923f2.js" crossorigin="anonymous"></script>
+    </body>
+</html>
